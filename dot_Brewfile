@@ -1,6 +1,7 @@
 tap "neovim/neovim"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
+tap "yuzeguitarist/deck"
 # Language Server for Bash
 brew "bash-language-server"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -97,6 +98,8 @@ brew "oven-sh/bun/bun"
 cask "nikitabobko/tap/aerospace"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Privacy-first clipboard manager
+cask "yuzeguitarist/deck/deckclip"
 cask "font-caskaydia-cove-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
