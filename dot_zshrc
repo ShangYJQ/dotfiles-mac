@@ -48,8 +48,7 @@ function y() {
 }
 
 function qkgit() {
-	local msg="${*:-dev}"
-	git add . && git commit -m "$msg" && git push
+	git add . && aicommits -y && git push
 }
 
 eval "$(zoxide init zsh)"

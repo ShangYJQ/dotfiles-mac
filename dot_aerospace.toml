@@ -17,6 +17,10 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
+# 智能切换输入法 在切换到 终端的时候切换成英文
+on-focus-changed = [
+	'exec-and-forget /bin/zsh ~/.config/aerospace/scripts/smart-input-source.sh',
+]
 
 [gaps]
 inner.horizontal = 5
@@ -25,7 +29,6 @@ outer.left = 4
 outer.bottom = 4
 outer.top = 4
 outer.right = 4
-
 
 [mode.main.binding]
 # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
@@ -117,5 +120,11 @@ h = 'resize width -50'
 j = 'resize height +50'
 k = 'resize height -50'
 l = 'resize width +50'
+
+left = 'resize width -50'
+down = 'resize height +50'
+up = 'resize height -50'
+right = 'resize width +50'
+
 enter = 'mode main'
 esc = 'mode main'
