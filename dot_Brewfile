@@ -1,0 +1,106 @@
+tap "neovim/neovim"
+tap "nikitabobko/tap"
+tap "oven-sh/bun"
+# Language Server for Bash
+brew "bash-language-server"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Distributed revision control system
+brew "git"
+# Blazing fast terminal-ui for git written in rust
+brew "gitui"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Language server for the Go language
+brew "gopls"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Library to communicate with iOS devices natively
+brew "libimobiledevice"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Language Server for the Lua language
+brew "lua-language-server"
+# Another cmake lsp
+brew "neocmakelsp"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
+# Simple and easy-to-use library to learn videogames programming
+brew "raylib"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# SVG rendering tool and library
+brew "resvg"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Autoformat shell script source code
+brew "shfmt"
+# Opinionated Lua code formatter
+brew "stylua"
+# TOML toolkit written in Rust
+brew "taplo"
+# Program that allows you to count code, quickly
+brew "tokei"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Language servers for HTML, CSS, JavaScript, and JSON extracted from vscode
+brew "vscode-langservers-extracted"
+# Internet file retriever
+brew "wget"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
+# Language Server for Zig
+brew "zls"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+cask "font-caskaydia-cove-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Web browser
+cask "google-chrome"
+# System monitor for the menu bar
+cask "stats"

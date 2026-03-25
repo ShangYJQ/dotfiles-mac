@@ -1,0 +1,11 @@
+font-family = "CaskaydiaCove Nerd Font"
+font-size = 16
+
+theme = Catppuccin Macchiato
+
+custom-shader = shaders/cursor_sweep.glsl
+
+macos-window-buttons = hidden
+macos-titlebar-style = hidden
+
+# config-file = keybinds.conf
