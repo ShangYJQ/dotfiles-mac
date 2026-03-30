@@ -1,5 +1,5 @@
+tap "andrewmd5/tap"
 tap "laishulu/homebrew"
-tap "neovim/neovim"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "yuzeguitarist/deck"
@@ -29,14 +29,14 @@ brew "fzf"
 brew "gettext"
 # Distributed revision control system
 brew "git"
-# Blazing fast terminal-ui for git written in rust
-brew "gitui"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Language server for the Go language
 brew "gopls"
 # Install and debug iPhone apps from the command-line
 brew "ios-deploy"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # Library to communicate with iOS devices natively
@@ -45,6 +45,8 @@ brew "libimobiledevice"
 brew "llvm"
 # Language Server for the Lua language
 brew "lua-language-server"
+# Deep clean and optimize your Mac
+brew "mole"
 # Another cmake lsp
 brew "neocmakelsp"
 # Small build system for use with gyp or CMake
@@ -73,6 +75,8 @@ brew "taplo"
 brew "tokei"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Language servers for HTML, CSS, JavaScript, and JSON extracted from vscode
@@ -93,6 +97,8 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Distraction-free terminal writing environment with live markdown rendering
+brew "andrewmd5/tap/dawn"
 # macOS Input Source Manager
 brew "laishulu/homebrew/macism"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
