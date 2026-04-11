@@ -1,2 +1,10 @@
+If:
+  PathMatch: .*\.c
+CompileFlags:
+  Add: [-std=c17, -I/opt/homebrew/include]
+
+---
+If:
+  PathMatch: .*\.(cc|cpp|cxx|hpp|hh|hxx)
 CompileFlags:
   Add: [-std=c++23, -I/opt/homebrew/include]

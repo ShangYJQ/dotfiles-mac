@@ -4,6 +4,8 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+
 zstyle ':omz:update' mode auto # update automatically without asking
 zstyle ':omz:update' frequency 7
 
@@ -30,6 +32,7 @@ export CMAKE_PREFIX_PATH="/opt/homebrew/opt/llvm"
 export PATH="/Users/yjq/.bun/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+export PATH="$HOME/Library/Android/sdk/cmdline-tools/bin:$PATH"
 
 # 使用 eza 来代替 ls
 alias ls='eza --icons --group-directories-first'
