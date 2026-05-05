@@ -16,6 +16,7 @@ if status is-interactive
     fish_add_path (brew --prefix flex)/bin
     fish_add_path /Users/yjq/.bun/bin
     fish_add_path /Users/yjq/go/bin
+	fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/Library/Python/3.9/bin
     fish_add_path $HOME/Library/Android/sdk/cmdline-tools/bin
