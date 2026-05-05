@@ -9,6 +9,11 @@ if status is-interactive
     set -gx CPPFLAGS -I/opt/homebrew/opt/llvm/include
     set -gx CMAKE_PREFIX_PATH /opt/homebrew/opt/llvm
 
+    # clash
+    set -gx HTTP_PROXY http://127.0.0.1:7897
+    set -gx HTTPS_PROXY http://127.0.0.1:7897
+    set -gx ALL_PROXY socks5://127.0.0.1:7897
+
     # PATH
     fish_add_path /opt/homebrew/opt/llvm/bin
     fish_add_path /opt/homebrew/opt/curl/bin
@@ -16,10 +21,14 @@ if status is-interactive
     fish_add_path (brew --prefix flex)/bin
     fish_add_path /Users/yjq/.bun/bin
     fish_add_path /Users/yjq/go/bin
-	fish_add_path $HOME/.cargo/bin
+    fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/Library/Python/3.9/bin
     fish_add_path $HOME/Library/Android/sdk/cmdline-tools/bin
+
+    # ghcup
+    fish_add_path $HOME/.ghcup/bin
+    fish_add_path $HOME/.cabal/bin
 
     # eza 替代 ls
     alias ls='eza --icons --group-directories-first'
@@ -63,7 +72,4 @@ if status is-interactive
         rm -f -- "$tmp"
     end
 
-    # ghcup
-    fish_add_path $HOME/.ghcup/bin
-    fish_add_path $HOME/.cabal/bin
 end
