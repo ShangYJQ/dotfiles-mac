@@ -1,10 +1,14 @@
 tap "andrewmd5/tap"
+tap "brewforge/chinese"
+tap "brewforge/extras"
 tap "laishulu/homebrew"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "yuzeguitarist/deck"
 # Language Server for Bash
 brew "bash-language-server"
+# Parser generator
+brew "bison"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -17,16 +21,28 @@ brew "cmake"
 brew "cocoapods"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Command-line fuzzy finder written in Go
-brew "fzf"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# LSP implementation for the fish shell language
+brew "fish-lsp"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Fast Lexical Analyzer, generates Scanners (tokenizers)
+brew "flex"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Interact with Google Gemini AI models from the command-line
+brew "gemini-cli"
+# Glorious Glasgow Haskell Compilation System
+brew "ghc"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
@@ -41,6 +57,8 @@ brew "lazygit"
 brew "python@3.14"
 # Library to communicate with iOS devices natively
 brew "libimobiledevice"
+# Postgres C API library
+brew "libpq"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Language Server for the Lua language
@@ -49,14 +67,28 @@ brew "lua-language-server"
 brew "mole"
 # Another cmake lsp
 brew "neocmakelsp"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Small build system for use with gyp or CMake
 brew "ninja"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
+# Formatter for Haskell source code
+brew "ormolu"
+# High-performance formatting tool for JavaScript and TypeScript
+brew "oxfmt"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Object-relational database system
+brew "postgresql@18", link: true
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# ODBC 3 connectivity for UNIX
+brew "unixodbc"
+# Official PostgreSQL ODBC driver
+brew "psqlodbc"
 # Simple and easy-to-use library to learn videogames programming
 brew "raylib"
 # Persistent key-value database, with built-in net interface
@@ -65,6 +97,10 @@ brew "redis"
 brew "resvg"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
+# Display and control your Android device
+brew "scrcpy"
+# ANSI C compiler for Intel 8051, Maxim 80DS390, and Zilog Z80
+brew "sdcc"
 # Autoformat shell script source code
 brew "shfmt"
 # Opinionated Lua code formatter
@@ -73,6 +109,8 @@ brew "stylua"
 brew "taplo"
 # Program that allows you to count code, quickly
 brew "tokei"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Parser generator tool
 brew "tree-sitter-cli"
 # Extremely fast Python package installer and resolver, written in Rust
@@ -105,14 +143,30 @@ brew "laishulu/homebrew/macism"
 brew "oven-sh/bun/bun"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
+# Android SDK component
+cask "android-platform-tools"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
 # Privacy-first clipboard manager
 cask "yuzeguitarist/deck/deckclip"
+# Web browser
+cask "firefox"
 cask "font-caskaydia-cove-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
 cask "google-chrome"
+# Neovim Client
+cask "neovide-app"
 # System monitor for the menu bar
 cask "stats"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin@21"
+# Open-source code editor
+cask "visual-studio-code"
+go "github.com/owenrumney/make-ls/cmd/make-ls"
+cargo "cargo-zigbuild"
+cargo "codex-switch"
+cargo "cross"
