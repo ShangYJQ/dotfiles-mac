@@ -31,9 +31,12 @@ if status is-interactive
     fish_add_path $HOME/.cabal/bin
 
     # eza 替代 ls
-    alias ls='eza --icons --group-directories-first'
-    alias ll='eza --icons -l --git --header --total-size --time-style=long-iso'
-    alias la='eza --icons -l -a --git --header --total-size --time-style=long-iso'
+    if type -q eza
+        alias l='command eza --icons -l --group-directories-first'
+        alias ls='command eza --icons --group-directories-first'
+        alias ll='command eza --icons -l --git --header --total-size --time-style=long-iso'
+        alias la='command eza --icons -l -a --git --header --total-size --time-style=long-iso'
+    end
 
     function lt
         set level 3
@@ -47,7 +50,13 @@ if status is-interactive
 
     alias c='clear'
 
+    abbr -a cs codex-switch
+
+    # git abbr
     abbr -a qkgit 'git add .; and aicommits -y; and git push'
+    abbr -a pull 'git pull'
+    abbr -a push 'git push'
+    abbr -a add 'git add .'
 
     if type -q zoxide
         zoxide init fish | source

@@ -8,4 +8,6 @@ custom-shader = shaders/cursor_sweep.glsl
 macos-window-buttons = hidden
 macos-titlebar-style = hidden
 
+shell-integration-features = true
+
 # config-file = keybinds.conf
