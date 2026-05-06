@@ -1,4 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/Users/yjq/\x2ecargo/bin\x1e/Users/yjq/\x2ecabal/bin\x1e/Users/yjq/\x2eghcup/bin\x1e/Users/yjq/Library/Android/sdk/cmdline\x2dtools/bin\x1e/Users/yjq/Library/Python/3\x2e9/bin\x1e/Users/yjq/\x2elocal/bin\x1e/Users/yjq/go/bin\x1e/Users/yjq/\x2ebun/bin\x1e/opt/homebrew/opt/flex/bin\x1e/opt/homebrew/opt/bison/bin\x1e/opt/homebrew/opt/curl/bin\x1e/opt/homebrew/opt/llvm/bin

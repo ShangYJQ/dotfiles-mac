@@ -17,8 +17,10 @@ if status is-interactive
     # PATH
     fish_add_path /opt/homebrew/opt/llvm/bin
     fish_add_path /opt/homebrew/opt/curl/bin
+
     fish_add_path (brew --prefix bison)/bin
     fish_add_path (brew --prefix flex)/bin
+
     fish_add_path /Users/yjq/.bun/bin
     fish_add_path /Users/yjq/go/bin
     fish_add_path $HOME/.cargo/bin
@@ -54,9 +56,12 @@ if status is-interactive
 
     # git abbr
     abbr -a qkgit 'git add .; and aicommits -y; and git push'
-    abbr -a pull 'git pull'
-    abbr -a push 'git push'
-    abbr -a add 'git add .'
+    abbr -a gpl 'git pull'
+    abbr -a gph 'git push'
+    abbr -a g2p 'git pull; and git push'
+    abbr -a ga 'git add .'
+    abbr -a gr 'git restore .'
+    abbr -a gs 'git status --short'
 
     if type -q zoxide
         zoxide init fish | source
