@@ -10,9 +10,9 @@ if status is-interactive
     set -gx CMAKE_PREFIX_PATH /opt/homebrew/opt/llvm
 
     # clash
-    set -gx HTTP_PROXY http://127.0.0.1:7897
-    set -gx HTTPS_PROXY http://127.0.0.1:7897
-    set -gx ALL_PROXY socks5://127.0.0.1:7897
+    # set -gx HTTP_PROXY socks5://127.0.0.1:7897
+    # set -gx HTTPS_PROXY socks5://127.0.0.1:7897
+    # set -gx ALL_PROXY socks5://127.0.0.1:7897
 
     # PATH
     fish_add_path /opt/homebrew/opt/llvm/bin
@@ -87,3 +87,7 @@ if status is-interactive
     end
 
 end
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/Users/yjq/.local/bin" $PATH

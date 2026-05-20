@@ -1,0 +1,32 @@
+Host abc
+    HostName abc.bcyzz.xyz
+    User root
+    Port 22
+    SetEnv TERM=xterm-256color
+
+Host miniob
+	HostName bcyzz.xyz
+	User cugcs
+	Port 8222
+	SetEnv TERM=xterm-256color
+
+Host debianMC
+	HostName bcyzz.xyz
+	User root
+	Port 8022
+	SetEnv TERM=xterm-256color
+
+Host nix
+	HostName bcyzz.xyz
+	User yjq
+	Port 8322
+
+Host nix-pc
+	HostName bcyzz.xyz
+	Port 8422
+	User yjq
+
+Host tx5
+	HostName 172.27.171.125
+	User yjq
+

@@ -18,9 +18,7 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # 智能切换输入法 在切换到 终端的时候切换成英文
-on-focus-changed = [
-	'exec-and-forget /bin/zsh ~/.config/aerospace/scripts/smart-input-source.sh',
-]
+on-focus-changed = ['exec-and-forget /bin/zsh ~/.config/aerospace/scripts/smart-input-source.sh']
 
 [gaps]
 inner.horizontal = 5
@@ -35,6 +33,7 @@ outer.right = 4
 
 # 终端：Ghostty
 alt-t = 'exec-and-forget open -na Ghostty'
+alt-shift-t = 'exec-and-forget open -na Ghostty --args -e ssh nix-utm'
 
 # chrome
 alt-b = 'exec-and-forget open -na "Google Chrome"'
@@ -74,8 +73,8 @@ alt-n = 'split vertical'
 
 alt-f = 'fullscreen'
 
-alt-s = 'layout v_accordion'               # 'layout stacking' in i3
-alt-w = 'layout h_accordion'               # 'layout tabbed' in i3
+alt-s = 'layout v_accordion' # 'layout stacking' in i3
+alt-w = 'layout h_accordion' # 'layout tabbed' in i3
 alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 
 alt-shift-v = 'layout floating tiling' # 'floating toggle' in i3
