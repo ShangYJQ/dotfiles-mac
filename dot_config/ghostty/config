@@ -1,6 +1,9 @@
 font-family = "CaskaydiaCove Nerd Font"
 font-size = 16
 
+background-opacity = 0.6
+background-blur = macos-glass-regular
+
 theme = Catppuccin Macchiato
 
 custom-shader = shaders/cursor_sweep.glsl
